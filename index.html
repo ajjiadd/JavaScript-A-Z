@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>JavaScript Practice</title>
+
+    <script>
+        function chngTx() {
+            let MTitle = document.getElementById("main-title");
+            let Subtle = document.getElementById("sub-title");
+            let descript = document.getElementById("descrip");
+            Subtle.innerHTML = "Scroll Down and";
+            MTitle.innerHTML = "Let's Practice...!";
+            descript.innerHTML = "All the practice and source code are mentioned bellow. Check it and practice, Ummm... This website was created primarily for that purpose, so that you don't have to worry about finding answers to these questions.";
+
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <h1><span>Java </span>Script</h1>
+            <ul>
+                <a href="#"><li>Home</li></a>
+
+                <a href="#projects-sec">
+                    <li>Practice</li>
+                </a>
+                
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <div class="heroContent">
+                <h2 id="sub-title">Developer must be know</h2>
+                <h1 id="main-title">How to work JavaScript!</h1>
+                <p id="descrip">
+                    How it work, How to learn, How to find resources? This website was created primarily for that purpose, so that you don't have to worry about finding answers to these questions.
+                </p>
+                <div>
+                    <button onclick="chngTx()" class="btn">Click Me</button>
+                </div>
+            </div>
+            <div class="heroImg">
+                <img src="./assets/javascript-series.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="projects" id="projects-sec">
+            <h2>PRACTICE</h2>
+            <p class="proj-des">These DOM projects are designed in such a way that you can understand what is DOM just by looking<br> at the code of these projects. The source code is provided with each project.</p>
+
+            <div class="projectCard-Container">
+                <!-- project-card-1  -->
+                <div class="projectCard">
+                    <h3>Intro to Output</h3>
+                    <p>How to work in html and how to change HTML element value by click a button!</p>
+                    <div class="cardBtn-container">
+                        <a href="./output/index.html"><button class="crd-btn">View Project</button></a>
+
+                        <a href="https://github.com/ajjiadd/JavaScript-A-Z"><button class="crd-btn-code">Source Code</button></a>
+                    </div>
+                    
+                </div>
+                <!-- project-card-2  -->
+                <div class="projectCard">
+                    <h3>Project 2</h3>
+                    <p>Create HEX color, showing the color value in input!</p>
+                    <div class="cardBtn-container">
+                        <a href="./Project-2/index.html"><button class="crd-btn">View Project</button></a>
+
+                        <a href="https://github.com/ajjiadd/JavaScript-A-Z"><button class="crd-btn-code">Source Code</button></a>
+                    </div>
+                    
+                </div>
+                <!-- project-card-3  -->
+                <div class="projectCard">
+                    <h3>Project 3</h3>
+                    <p>Add copy button to copy the color code!</p>
+                    <div class="cardBtn-container">
+                        <a href="./Project-3/index.html"><button class="crd-btn">View Project</button></a>
+
+                        <a href="https://github.com/ajjiadd/JavaScript-A-Z"><button class="crd-btn-code">Source Code</button></a>
+                    </div>
+                    
+                </div>
+                <!-- project-card-4  -->
+                <div class="projectCard">
+                    <h3>Project 4</h3>
+                    <p>Add Tost Message, when copy the color code then showing the Tost!</p>
+                    <div class="cardBtn-container">
+                        <a href="./Project-4/index.html"><button class="crd-btn">View Project</button></a>
+
+                        <a href="https://github.com/ajjiadd/JavaScript-A-Z"><button class="crd-btn-code">Source Code</button></a>
+                    </div>
+                    
+                </div>
+                <!-- project-card-5  -->
+                <div class="projectCard">
+                    <h3>Project 5</h3>
+                    <p>Click the button or write the color code for change the color...!</p>
+                    <div class="cardBtn-container">
+                        <a href="./project-5/index.html"><button class="crd-btn">View Project</button></a>
+
+                        <a href="https://github.com/ajjiadd/JavaScript-A-Z"><button class="crd-btn-code">Source Code</button></a>
+                    </div>
+                </div>
+
+                <!-- project-card-6  -->
+                <div class="projectCard">
+                    <h3>Project 6</h3>
+                    <p>Crate RGB color, connect between JavaScript and HTML</p>
+                    <div class="cardBtn-container">
+                        <a href=""><button class="crd-btn">View Project</button></a>
+
+                        <a href="https://github.com/ajjiadd/JavaScript-A-Z"><button class="crd-btn-code">Source Code</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    
+    
+</body>
+</html>

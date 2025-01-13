@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic practice | Introduction </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Using innerHTML  -->
+    <div class="divBorder">
+        <h2>Using innerHTM</h2>
+
+        <p id="demo">A Paragraph.</p>
+
+        <button type="button" onclick="myFunction()">Try it</button>
+        <!-- line br  -->
+        <div class="divline"></div>
+        <p>Math output showing in h1 tag</p>
+        <h1 id="fst-Title"></h1>
+
+    </div>
+
+    <!-- Using document.write()  -->
+    <div class="divBorder">
+        <p>For testing purposes, it is convenient to use document.write():</p>
+
+        <p>Never call document.write after the document has finished loading.
+            It will overwrite the whole document. Using document.write() after an HTML document is loaded, will delete
+            all existing HTML:</p>
+        <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    </div>
+
+    <div class="divBorder">
+        <p>Using window.alert()</p>
+        <button type="button" onclick="window.alert('Hello World')">Check the Alert</button>
+    </div>
+
+    <div class="divBorder">
+        <h1>Using console.log()</h1>
+        <p>For debugging purposes, you can call the console.log() method in the browser to display data.</p>
+
+    </div>
+
+    <div class="divBorder">
+        <h2>The window.print() Method</h2>
+        <p>Click the button to print the current page.</p>
+        <button onclick="window.print()">Print</button>
+    </div>
+
+
+
+
+
+    <!-- inner JS  -->
+    <script>
+        //  using innerHTML 
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        // write on h1 tag 
+        document.getElementById("fst-Title").innerHTML = 6 + 11
+
+
+        // Using document.write()
+        // document.write(1+24)
+    </script>
+</body>
+
+</html>
